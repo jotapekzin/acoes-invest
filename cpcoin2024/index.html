@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cpcoin - Simulação de Investimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Investimentos - Cpcoin</h1>
+        <div class="info">
+            <p>Saldo de Cpcoins: <span id="cpcoins">1000</span></p>
+        </div>
+
+        <div class="investment-form">
+            <label for="stock">Escolha uma ação:</label>
+            <select id="stock">
+                <option value="Empresa A">Empresa A</option>
+                <option value="Empresa B">Empresa B</option>
+                <option value="Empresa C">Empresa C</option>
+            </select>
+
+            <label for="amount">Quantidade a investir:</label>
+            <input type="number" id="amount" placeholder="Digite a quantia" />
+
+            <button onclick="invest()">Investir</button>
+        </div>
+
+        <!-- Área de resultado e animação -->
+        <div id="result"></div>
+        <div id="animation-container">
+            <div id="arrow-up" class="arrow up">⬆️ Ações Subindo!</div>
+            <div id="arrow-down" class="arrow down">⬇️ Ações Descendo!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
